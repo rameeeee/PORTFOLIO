@@ -38,7 +38,7 @@
                   <a href="#tech" class="link">TECH</a>
                 </li>
                 <li class="item">
-                  <a href="#project" class="link">PROJECT</a>
+                  <a href="#project" class="link">PROJECTS</a>
                 </li>
                 <li class="item">
                   <a href="/Contact/" class="link">Contact</a>
@@ -55,7 +55,7 @@
         <div class="content_spot">
           <div class="video_box">
             <video autoplay="autoplay" muted>
-              <source src="./video/bg_spot.mp4" type="video/mp4" />
+              <source src="./video/bg_spot_v2.mov" type="video/mp4" />
             </video>
           </div>
           <div class="text_box">
@@ -127,16 +127,6 @@
                   </dl>
                 </div>
               </div>
-              <!-- <div class="box_wrap">
-                            <div class="right_box">
-                                <p class="text">저는 이런 방법으로 생각의 힘을 기르려고 노력해요</p>
-                                <ul class="think_list">
-                                    <li>단순하게 생각하고 명료화하기</li>
-                                    <li>반복해서 생각하고 가치의 우선순위 정하기</li>
-                                    <li>생각들을 지속적으로 환류하기</li>
-                                </ul>
-                            </div>
-                        </div> -->
             </div>
           </div>
           <div class="section_tech" id="tech">
@@ -944,14 +934,67 @@
                 </ul>
               </div>
               <div class="project_box">
+                <h4 class="sub_title">라인컨텐츠 검색</h4>
+                <div class="info_box">
+                  일본 라인앱에서 검색 시 노출되는 페이지를 제작하였습니다.<br />
+                  인물, 영화, 프로그램, 만화, 날씨, 지진, 레시피, 별자리,
+                  스포츠, 이벤트 등 다양한 주제의 페이지에서 개선 작업 및 연말에
+                  제공되는 이벤트성 페이지를 제작하였습니다.<br />
+                  기존에 각 주제별로 각각 사용되던 타이틀을 ejs를 활용하여 공통
+                  타이틀 제작을 진행하였습니다.<br />
+                  라인컨텐츠 검색 페이지의 경우, 한국 라인앱에서는 컨텐츠 검색
+                  기능이 제공되지 않아 실제 페이지 경로 제공이 어려워 라인컨텐츠
+                  검색 소개페이지 링크로 대체한 점 양해 부탁드립니다.
+                </div>
+                <ul class="project_list line_cs">
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">라인컨텐츠 검색</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/linecs/linecs_mo_01.png"
+                                    alt="라인컨텐츠 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://creative.line.me/ko/blog/74"
+                                  target="_blank"
+                                  >라인컨텐츠 검색 소개 페이지 바로가기
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="project_box">
                 <h4 class="sub_title">SNOW</h4>
                 <div class="info_box">
                   SNOW는 모바일 페이지만 제작하며, 기기별 화면 너비 100%로
                   제작합니다.<br />
                   한국어 뿐만 아니라 일본어, 중국어, 베트남어, 인도네시아어 등
                   다국어 페이지를 제작하였습니다. <br />
-                  특히 앱에서 제공하는 필터 화면을 제작하는 경우 너비100%뿐만
-                  아니라 길이 100%에 맞게 노출되도록 제작하였습니다. <br />
+                  스노우앱에서 제공하는 증명사진 필터 화면을 제작 시
+                  너비100%뿐만 아니라 길이 100%에 맞게 노출되도록
+                  제작하였습니다. <br />
                   다국어 페이지 제작 시 html lang 속성을 각 나라에 맞게
                   작성하고, 해당 언어를 지원하는 폰트 스타일을
                   적용하였습니다.<br />
@@ -1121,17 +1164,16 @@
                   </li>
                 </ul>
               </div>
-
               <div class="project_box">
                 <h4 class="sub_title">네이버 서비스</h4>
                 <div class="info_box">
                   해상도를 구분하여 반응형으로 제작하였습니다.<br />
-                  원쁠딜 캠페인의 경우에는 프론트엔드개발자가 세팅한 리액트
+                  원쁠딜 캠페인의 경우에는 프론트엔드 개발자가 세팅한 리액트
                   환경에서 제작하였습니다.<br />
-                  쥬니버 도란도란 캠페인의 경우에는 개선 작업을 진행한 것으로서
+                  쥬니버 도란도란 캠페인의 경우, 개선 작업을 진행한 것으로서
                   기존 페이지에서 동영상 아래 상장 내용 추가, 인터렉티브 학습
                   콘텐츠 순서 변경, 어떻게 연구했나요 열고 닫는 박스 부분, 슬릭
-                  부분을 포함한 콘텐츠 개발 협력 부분만 제가 작업하였습니다.<br />
+                  부분을 포함한 콘텐츠 개발 협력 부분만 작업하였습니다.<br />
                   클로바노트 100만 감사이벤트 페이지에서는 slick을 사용하여,
                   선물 아이템이 중간에 왔을 때 커지게 하는 것과 예시 문장에서
                   밑줄들이 자연스럽게 노출되는 것에 중점을 두고 작업하였습니다.
@@ -1687,57 +1729,36 @@
         },
       });
 
-      // 팝업 노출
-      // var test = document.querySelectorAll('.test');
-      // var dim = document.querySelector('.dim');
-
-      // test[0].addEventListener('click', function(e){
-      //     e.preventDefault();
-      //     dim.classList.add('active');
-      // });
-
-      // $(document).ready(function() {
-
-      //     $('.project01').load('include/project01_01.html');
-      // });
-
       $(document).ready(function () {
         $(".open_btn").click(function () {
           $(this).parent().parent().toggleClass("on");
-
-          // for(var i = 0; i<toggle_box.length; i++){
-
-          //     $(toggle_box[i]).toggleClass('on');
-          // }
         });
 
-        // 3초마다 on클래스 추가/제거
+        // 3초후 on클래스 추가/제거
 
         setTimeout(function () {
           $(".text_box").toggleClass("on");
         }, 1500);
 
         $(function () {
-          var $menu = $(".gnb_list .item"), //메뉴 li값 가져오기
-            $contents = $(".content > div"), //컨텐츠의 div값 가져오기
-            $test = $(".content").offset().top; //offset()은 Document 를 기준으로 하는 좌표를 구할 때 쓰임
+          var $menu = $(".gnb_list .item"),
+            $contents = $(".content > div"),
+            $test = $(".content").offset().top;
 
           $menu.click(function (e) {
-            e.preventDefault(); // href 를 통해 이동하거나 , 창이 새로고침하여 실행되는 것 방지
+            e.preventDefault();
             var idx = $menu.index(this);
             var section = $contents.eq(idx);
             var sectionDistance = section.offset().top;
 
-            //A.scrollTop() 스크롤양 확인
             $("html,body")
               .stop()
-              .animate({ scrollTop: sectionDistance - 60 });
+              .animate({ scrollTop: sectionDistance - 77 });
           });
 
-          //window scroll 생기면
           $(window).scroll(function () {
             $contents.each(function () {
-              if ($(this).offset().top - 60 <= $(window).scrollTop()) {
+              if ($(this).offset().top - 77 <= $(window).scrollTop()) {
                 var idx = $(this).index();
                 $menu.removeClass("on");
                 $menu.eq(idx).addClass("on");
@@ -1748,17 +1769,10 @@
           });
 
           $(window).scroll(function () {
-            // const eventTopHeight1 = $('.spot').height();
+            const eventTopHeight1 = $(".content_spot").height();
 
             window.addEventListener("scroll", function () {
               var scrollpos = window.scrollY || window.pageYOffset;
-              $(".content").addClass("show");
-
-              if (scrollpos > 0) {
-                $(".content").addClass("show");
-              } else {
-                $(".content").removeClass("show");
-              }
             });
           });
         });
