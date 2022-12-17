@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Thinker</title>
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/thinker.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="header_scroll">
+          <div class="header_inner">
+            <h1 class="logo">
+              <a href="#" class="link">
+                <i class="icon_logo"></i>
+                <span>THINKER</span>
+              </a>
+            </h1>
+            <!-- [D] (모바일) btn_menu 클릭 시 header에 on 클래스 추가, body에 overflow: hidden 적용 -->
+            <button class="btn_menu">
+              <span class="blind">메뉴 열기</span>
+            </button>
+            <div class="menu_box">
+              <ul class="gnb_list">
+                <!-- [D] 클릭시 item에 on 클래스 추가 -->
+                <li class="item">
+                  <a href="#about" class="link">ABOUT</a>
+                </li>
+                <li class="item">
+                  <a href="#tech" class="link">TECH</a>
+                </li>
+                <li class="item">
+                  <a href="#project" class="link">PROJECT</a>
+                </li>
+                <li class="item">
+                  <a href="/Contact/" class="link">Contact</a>
+                </li>
+              </ul>
+              <button class="btn_close">
+                <span class="blind">메뉴 닫기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content_spot">
+          <div class="video_box">
+            <video autoplay="autoplay" muted>
+              <source src="./video/bg_spot.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="text_box">
+            <div class="tit_wrap">
+              <h2 class="spot_tit">THINKER!</h2>
+            </div>
+            <button type="button" class="btn_go">
+              <span class="blind">아래로</span>
+            </button>
+          </div>
+        </div>
+        <div class="content">
+          <div class="section_about" id="about">
+            <div class="inner">
+              <h2 class="title">
+                <span class="left_t">
+                  <span class="point">생각을 실현</span>하는<br />
+                </span>
+                <span class="right_t">
+                  <span class="point">웹퍼블리셔 박아람</span>입니다.
+                </span>
+              </h2>
+              <div class="sub_tit">
+                <p class="text">
+                  공감하는 능력과 체계화하는 능력의 원천에는 생각의 힘이
+                  있습니다.<br />
+                  생산적인 생각과 꾸준한 배움을 통해 성장해나가겠습니다.
+                </p>
+              </div>
+              <div class="info_box">
+                <div class="box_wrap">
+                  <strong class="info_tit">About Me</strong>
+                  <dl class="info_list">
+                    <dt>Career</dt>
+                    <dd>
+                      <p class="date">2022.07 ~ 현재</p>
+                      [네이버 계열사 인컴즈 / 주임]
+                    </dd>
+                    <dt>Certificate</dt>
+                    <dd>
+                      <p class="info">
+                        <span class="date">2019.11</span> 정보처리기사 취득
+                      </p>
+                      <p class="info">
+                        <span class="date">2014.05</span> 컴퓨터활용능력2급 취득
+                      </p>
+                      <p class="info">
+                        <span class="date">2011.11</span>
+                        컴퓨터그래픽스운용기능사 취득
+                      </p>
+                    </dd>
+                    <dt>Education</dt>
+                    <dd>
+                      <p class="info">
+                        <span class="date">2022.10~현재</span> 이젠아카데미
+                        컴퓨터학원 강남점<br />
+                        바닐자 자바스크립트 교육 수료 <br />
+                        React 교육 수강중
+                      </p>
+                      <p class="info">
+                        <span class="date"
+                          >2014.08 한림대 방송통신/디지털콘텐츠 졸업</span
+                        >
+                      </p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!-- <div class="box_wrap">
+                            <div class="right_box">
+                                <p class="text">저는 이런 방법으로 생각의 힘을 기르려고 노력해요</p>
+                                <ul class="think_list">
+                                    <li>단순하게 생각하고 명료화하기</li>
+                                    <li>반복해서 생각하고 가치의 우선순위 정하기</li>
+                                    <li>생각들을 지속적으로 환류하기</li>
+                                </ul>
+                            </div>
+                        </div> -->
+            </div>
+          </div>
+          <div class="section_tech" id="tech">
+            <div class="inner">
+              <h2 class="title color_ver">Skills & Tools</h2>
+              <div class="info_box">
+                <strong class="info_tit">Skills</strong>
+                <ul class="skill_list">
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_html.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">HTML</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_scss.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">SCSS</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_css.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">CSS</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_jquery.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">jQuery</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_gulp.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">Gulp</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="info_box">
+                <strong class="info_tit">Tools</strong>
+                <ul class="tool_list">
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_vscode.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">VS Code</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_sourcetree.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">SourceTree</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_github.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">Github</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_photoshop.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">Photoshop</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_zeplin.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">Zeplin</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_figma.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">Figma</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_slack.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">slack</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_jira.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">JIRA</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="info_box">
+                <strong class="info_tit">Studying</strong>
+                <ul class="study_list">
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_javascript.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">JavaScript</span>
+                  </li>
+                  <li>
+                    <i class="icon_wrap">
+                      <img
+                        src="./svg/icon_react.svg"
+                        alt=""
+                        width="52"
+                        height="52"
+                      />
+                    </i>
+                    <span class="name">React</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section_project" id="projectx">
+            <div class="inner">
+              <h2 class="title color_ver">Projects</h2>
+              <div class="project_box">
+                <h4 class="sub_title">컨텐츠 검색</h4>
+                <div class="info_box">
+                  PC와 모바일을 동일 구조로 하여, 적응형으로 제작하였습니다.<br />
+                  공통 UI를 기반으로 진행되어 마크업 진행 시에도 공통 구조와
+                  CSS를 사용하며, 모바일은 다크모드까지 대응하였습니다.<br />
+                  개별 주제에 공통 구조와 CSS를 이용하되, 신규 UI의 경우
+                  담당자가 컴포넌트를 추가하게 됩니다.<br />
+                  마크업 작업 이후 디자인 검수, QA 및 배포 대응까지가 하나의
+                  사이클입니다.<br />
+                  특정 주제에서만 사용되는 스타일이거나 기존에 없던 스타일인
+                  경우 기존 컴포넌트에 영향이 가지 않도록 하고, 추후에도 사용할
+                  수 있는 의미의 멀티클래스를 만들어서 스타일을 적용하였습니다.
+                </div>
+                <ul class="project_list two_content">
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">2022 카타르 월드컵</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_01.png"
+                                    alt="pc 카타르월드컵 전체검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=2022+%EC%B9%B4%ED%83%80%EB%A5%B4+%EC%9B%94%EB%93%9C%EC%BB%B5&oquery=%EC%95%84%EC%9D%B4%EB%A7%A5m1+%ED%99%94%EB%A9%B4+%EB%B6%84%EB%A6%AC&tqi=hGrytwp0J1Zssd59KowssssssoV-293113"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 전체검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_01.png"
+                                    alt="mo 카타르월드컵 전체검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=2022+%EC%B9%B4%ED%83%80%EB%A5%B4+%EC%9B%94%EB%93%9C%EC%BB%B5"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 전체검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_02.png"
+                                    alt="pc 카타르월드컵 조별리그 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkFF&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%20%EC%9B%94%EB%93%9C%EC%BB%B5%20%EC%A1%B0%EB%B3%84%EB%A6%AC%EA%B7%B8"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 조별리그 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_02.png"
+                                    alt="mo 카타르월드컵 조별리그 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bkFF&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%20%EC%9B%94%EB%93%9C%EC%BB%B5%20%EC%A1%B0%EB%B3%84%EB%A6%AC%EA%B7%B8"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 조별리그 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_03.png"
+                                    alt="pc 카타르월드컵 토너먼트 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkFF&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%20%EC%9B%94%EB%93%9C%EC%BB%B5%20%ED%86%A0%EB%84%88%EB%A8%BC%ED%8A%B8"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 토너먼트 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_03.png"
+                                    alt="mo 카타르월드컵 토너먼트 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bkFF&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%20%EC%9B%94%EB%93%9C%EC%BB%B5%20%ED%86%A0%EB%84%88%EB%A8%BC%ED%8A%B8"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 토너먼트 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_04.png"
+                                    alt="pc 카타르월드컵 영샹 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkFF&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%20%EC%9B%94%EB%93%9C%EC%BB%B5%20%EC%98%81%EC%83%81"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 영상 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_04.png"
+                                    alt="mo 카타르월드컵 영상 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bkFF&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%20%EC%9B%94%EB%93%9C%EC%BB%B5%20%EC%98%81%EC%83%81"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 영상 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_05.png"
+                                    alt="pc 카타르월드컵 개별경기 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%ED%8F%AC%EB%A5%B4%ED%88%AC%EA%B0%88&oquery=16%EA%B0%95+%EA%B2%BD%EC%9A%B0%EC%9D%98+%EC%88%98&tqi=hGrI%2Fwp0YihssAec7jCsssssswl-376312"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 개별경기 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_05.png"
+                                    alt="mo 카타르월드컵 개별경기 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&oquery=16%EA%B0%95+%EA%B2%BD%EC%9A%B0%EC%9D%98+%EC%88%98&tqi=hGr%2FklqVWT8ssvoJ7rZssssssW4-034268&query=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%ED%8F%AC%EB%A5%B4%ED%88%AC%EA%B0%88"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 개별경기 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_06.png"
+                                    alt="pc 카타르월드컵 출전국가 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkJF&pkid=6211&os=29009267&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%EC%9B%94%EB%93%9C%EC%BB%B5%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 출전국가 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_06.png"
+                                    alt="mo 카타르월드컵 출전국가 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bkJF&pkid=6211&os=29009267&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%EC%9B%94%EB%93%9C%EC%BB%B5%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 출전국가 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_07.png"
+                                    alt="pc 카타르월드컵 경기일정 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkJF&pkid=6211&os=29009267&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%EC%9B%94%EB%93%9C%EC%BB%B5%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EA%B2%BD%EA%B8%B0%EC%9D%BC%EC%A0%95"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 경기일정 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_07.png"
+                                    alt="mo 카타르월드컵 경기일정 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&mra=bkJF&pkid=6211&os=29009267&qvt=0&query=2022%20%EC%B9%B4%ED%83%80%EB%A5%B4%EC%9B%94%EB%93%9C%EC%BB%B5%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EA%B2%BD%EA%B8%B0%EC%9D%BC%EC%A0%95"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 경기일정 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_09.png"
+                                    alt="pc 카타르월드컵 선수 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%86%90%ED%9D%A5%EB%AF%BC&oquery=2022+%EC%B9%B4%ED%83%80%EB%A5%B4%EC%9B%94%EB%93%9C%EC%BB%B5+%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EA%B2%BD%EA%B8%B0%EC%9D%BC%EC%A0%95&tqi=hGWnMsprvh8ssPpcgZZssssssPw-362756"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 선수 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_09.png"
+                                    alt="mo 카타르월드컵 선수 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&oquery=2022+%EC%B9%B4%ED%83%80%EB%A5%B4%EC%9B%94%EB%93%9C%EC%BB%B5+%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EA%B2%BD%EA%B8%B0%EC%9D%BC%EC%A0%95&tqi=hGWnSwprffCssEvryHosssssteC-355910&query=%EC%86%90%ED%9D%A5%EB%AF%BC"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 선수 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_pc_10.png"
+                                    alt="pc 카타르월드컵 진출 경우의 수 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=16%EA%B0%95+%EC%A7%84%EC%B6%9C+%EA%B2%BD%EC%9A%B0%EC%9D%98+%EC%88%98&oquery=%EC%86%90%ED%9D%A5%EB%AF%BC&tqi=hGWnEsprvTVssT9niuVsssssszZ-209408"
+                                  target="_blank"
+                                  >PC 카타르 월드컵 경우의 수 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/qatar/qatar_mo_10.png"
+                                    alt="mo 카타르월드컵 진출 경우의 수 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&oquery=%EC%86%90%ED%9D%A5%EB%AF%BC&tqi=hGWnllprfSRssEBuTfosssssthV-090648&query=16%EA%B0%95+%EC%A7%84%EC%B6%9C+%EA%B2%BD%EC%9A%B0%EC%9D%98+%EC%88%98"
+                                  target="_blank"
+                                  >MO 카타르 월드컵 경우의 수 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">지진 정보</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/earthquake/earthquake_pc_01.png"
+                                    alt="pc 지진 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%A7%80%EC%A7%84&oquery=%EC%A7%80%EC%A7%84%EC%A0%95%EB%B3%B4&tqi=hGWJGlprvh8ssEtO8Awssssst80-158796"
+                                  target="_blank"
+                                  >PC 지진 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/earthquake/earthquake_mo_01.png"
+                                    alt="mo 지진 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%A7%80%EC%A7%84"
+                                  target="_blank"
+                                  >MO 지진 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">VIBE 오디오</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/audioclip/audioclip_pc_01.png"
+                                    alt="pc vibe오디오(탭x) 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%AA%85%EC%83%81+%EC%9D%8C%EC%95%85&oquery=ASMR&tqi=hGW%2BTdprvN8ssnyFLJ4ssssssf8-486034"
+                                  target="_blank"
+                                  >PC VIBE 오디오(탭x) 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/audioclip/audioclip_mo_01.png"
+                                    alt="mo vibe오디오(탭x) 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=tab_hty.top&where=m&query=%EB%AA%85%EC%83%81+%EC%9D%8C%EC%95%85&oquery=ASMR&tqi=hGW%2BTdprvN8ssnyFLJ4ssssssf8-486034"
+                                  target="_blank"
+                                  >MO VIBE 오디오(탭x) 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/audioclip/audioclip_pc_02.png"
+                                    alt="pc vibe오디오(탭o) 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=ASMR&oquery=%EB%AA%85%EC%83%81+%EC%9D%8C%EC%95%85&tqi=hGW%2BAdprvmZss48lOy8ssssss7G-438408"
+                                  target="_blank"
+                                  >PC VIBE 오디오(탭o) 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/audioclip/audioclip_mo_02.png"
+                                    alt="mo vibe오디오(탭o) 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&oquery=%EB%AA%85%EC%83%81%EC%9D%8C%EC%95%85&tqi=hGW%2FMwqVWUZssOxTr00ssssssjN-312957&query=ASMR"
+                                  target="_blank"
+                                  >MO VIBE 오디오(탭o) 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">골프 대회 일정 / 골프 선수 랭킹</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/golf/golf_pc_01.png"
+                                    alt="pc 골프 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EA%B3%A8%ED%94%84"
+                                  target="_blank"
+                                  >PC 골프 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/golf/golf_mo_01.png"
+                                    alt="mo 골프 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&oquery=ASMR&tqi=hGW%2Fklp0iANssa1%2F6%2Flsssssscd-341028&query=%EA%B3%A8%ED%94%84"
+                                  target="_blank"
+                                  >MO 골프 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">올스타전</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/allstar/allstar_pc_01.png"
+                                    alt="pc 올스타전 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%98%AC%EC%8A%A4%ED%83%80%EC%A0%84&oquery=%EA%B3%A8%ED%94%84&tqi=hGXtKdprvmsssTTQuuRssssssJR-235862"
+                                  target="_blank"
+                                  >PC 올스타전 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/allstar/allstar_mo_01.png"
+                                    alt="mo 올스타전 검색 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&oquery=%EA%B3%A8%ED%94%84&tqi=hGXtWlqVWuZssmKwONZssssstXd-080304&query=%EC%98%AC%EC%8A%A4%ED%83%80%EC%A0%84"
+                                  target="_blank"
+                                  >MO 올스타전 검색 바로가기</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="project_box">
+                <h4 class="sub_title">SNOW</h4>
+                <div class="info_box">
+                  SNOW는 모바일 페이지만 제작하며, 기기별 화면 너비 100%로
+                  제작합니다.<br />
+                  한국어 뿐만 아니라 일본어, 중국어, 베트남어, 인도네시아어 등
+                  다국어 페이지를 제작하였습니다. <br />
+                  특히 앱에서 제공하는 필터 화면을 제작하는 경우 너비100%뿐만
+                  아니라 길이 100%에 맞게 노출되도록 제작하였습니다. <br />
+                  다국어 페이지 제작 시 html lang 속성을 각 나라에 맞게
+                  작성하고, 해당 언어를 지원하는 폰트 스타일을
+                  적용하였습니다.<br />
+                </div>
+                <ul class="project_list one_content">
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">SNOW앱 증명사진 필터</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_01.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_02.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_03.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_04.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_05.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_06.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_07.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_08.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img src="./img/snow/snow_mo_09.jpg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="text_wrap">
+                          <span>
+                            화면 경로 : SNOW앱 &gt; 이펙트 버튼 클릭 &gt;
+                            셀프사진관 탭 &gt; 증명사진 필터 클릭
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">SNOW MJ KIM filter 소개</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/snow/mjkim_filter_01.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text_wrap">
+                          <span
+                            >화면 경로 : SNOW앱 &gt; 하단 더보기 &gt; 인기 기능
+                            알아보기 - 인기순위 &gt; 메이크업 영역 배너</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">SNOW 2022할로윈 UGC 이벤트</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/snow/halloween_01.png"
+                                    alt="할로윈 이벤트 페이지 화면"
+                                  />
+                                </div>
+                              </div>
+                              <div class="link_wrap">
+                                <a
+                                  href="https://snow-h5-web.pstatic.net/cdn/h5ar/event/halloween2022/halloween2022_ko.html"
+                                  target="_blank"
+                                  >SNOW 2022 할로윈 이벤트 바로가기</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project_box">
+                <h4 class="sub_title">네이버 서비스</h4>
+                <div class="info_box">
+                  해상도를 구분하여 반응형으로 제작하였습니다.<br />
+                  원쁠딜 캠페인의 경우에는 프론트엔드개발자가 세팅한 리액트
+                  환경에서 제작하였습니다.<br />
+                  쥬니버 도란도란 캠페인의 경우에는 개선 작업을 진행한 것으로서
+                  기존 페이지에서 동영상 아래 상장 내용 추가, 인터렉티브 학습
+                  콘텐츠 순서 변경, 어떻게 연구했나요 열고 닫는 박스 부분, 슬릭
+                  부분을 포함한 콘텐츠 개발 협력 부분만 제가 작업하였습니다.<br />
+                  클로바노트 100만 감사이벤트 페이지에서는 slick을 사용하여,
+                  선물 아이템이 중간에 왔을 때 커지게 하는 것과 예시 문장에서
+                  밑줄들이 자연스럽게 노출되는 것에 중점을 두고 작업하였습니다.
+                </div>
+                <ul class="project_list two_content">
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">네이버 프로모션/원쁠딜 캠페인</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/plusdeal/plusdeal_pc_01.jpg"
+                                    alt="원쁠딜 프로모션 PC 페이지"
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>PC 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/plusdeal/plusdeal_mo_01.jpg"
+                                    alt="원쁠딜 프로모션 MO 페이지"
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>MO 화면</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link_wrap">
+                          <a
+                            href="https://plusdeal.naver.com/sharepoint"
+                            target="_blank"
+                            >원쁠딜 프로모션 페이지 바로가기</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">네이버 쥬니버/도란도란 쥬니어 페이지</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/jrschool/jrschool_pc_01.jpg"
+                                    alt="도란도란 쥬니어 PC 페이지"
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>PC 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/jrschool/jrschool_tab_01.jpg"
+                                    alt="도란도란 쥬니어 TABLET 페이지"
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>TABLET 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/jrschool/jrschool_mo_01.jpg"
+                                    alt="도란도란 쥬니어 MO 페이지"
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>MO 화면</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link_wrap">
+                          <a
+                            href="https://campaign.naver.com/jrschool/"
+                            target="_blank"
+                            >네이버 쥬니버/도란도란 쥬니어 페이지 바로가기</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">
+                          네이버 비즈니스스쿨/동대문 스마트 물류 서비스 페이지
+                        </p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/bizschool/bizschool_pc_01.jpg"
+                                    alt="동대문 스마트 물류 서비스 PC 페이지 "
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>PC 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/bizschool/bizschool_tab_01.jpg"
+                                    alt="동대문 스마트 물류 서비스 TABLET 페이지 "
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>TABLET 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/bizschool/bizschool_mo_01.jpg"
+                                    alt="동대문 스마트 물류 서비스 MO 페이지 "
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>MO 화면</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link_wrap">
+                          <a
+                            href="https://campaign.naver.com/event/npay-ibk_2110?placement=all"
+                            target="_blank"
+                            >동대문 스마트 물류 서비스 페이지 바로가기</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">
+                          네이버 클로바/클로바노트 100만 감사이벤트 페이지
+                        </p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/clova/clova_pc_01.jpg"
+                                    alt="클로바노트 100만 감사이벤트 PC 페이지"
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>PC 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/clova/clova_mo_01.jpg"
+                                    alt="클로바노트 100만 감사이벤트 MO 페이지"
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>MO 화면</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link_wrap">
+                          <a
+                            href="https://campaign.naver.com/ClovaNote100M/"
+                            target="_blank"
+                            >네이버 클로바/클로바노트 100만 감사이벤트 페이지
+                            바로가기</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project_box">
+                <h4 class="sub_title">네이버 페이 프로모션</h4>
+                <div class="info_box">
+                  PC와 모바일 코드일원화를 하며 반응형으로 제작하였습니다.<br />
+                  Spot의 배경이미지의 가로 해상도가 길 경우를 대비하여
+                  백그라운드 컬러값을 spot 이미지 양쪽 가로 색상에 맞추어
+                  적용하였습니다.
+                </div>
+                <ul class="project_list two_content">
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">2022.10 서머너즈 워 크로니클</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/pay/2210_summonerswar_pc.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>PC 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/pay/2210_summonerswar_mo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>MO 화면</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link_wrap">
+                          <a
+                            href="https://campaign.naver.com/event/npay-summonerswar_2210?placement=all"
+                            target="_blank"
+                            >2022년 10월 서머너즈 워 크로니클</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">2021.10 하나카드</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/pay/2110_hanacard_pc.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>PC 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/pay/2110_hanacard_mo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>MO 화면</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link_wrap">
+                          <a
+                            href="https://campaign.naver.com/event/npay-hana_2110?placement=all"
+                            target="_blank"
+                            >2021년 10월 하나카드</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">2021.10 네이버페이 x IBK기업은행</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/pay/2110_npay_ibk_pc.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>PC 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/pay/2110_npay_ibk_mo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>MO 화면</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link_wrap">
+                          <a
+                            href="https://campaign.naver.com/event/npay-ibk_2110?placement=all"
+                            target="_blank"
+                            >2021년 10월 네이버페이 x IBK기업은행</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="project_item">
+                    <!-- .open_btn을 클릭하면 .toggle_box에 .open 클래스 추가하고
+                                    toggle_box가 닫히면 .open클래스 삭제  -->
+                    <div class="toggle_box">
+                      <div class="subject">
+                        <p class="text">2021.09 라인프렌즈 신한카드</p>
+                        <button class="open_btn" type="button">
+                          <span class="blind">자세히 보기</span>
+                        </button>
+                      </div>
+                      <div class="detail">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/pay/2109_shinhan_pc.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>PC 화면</span>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="scroll_box">
+                                <div class="img_wrap">
+                                  <img
+                                    src="./img/pay/2109_shinhan_mo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="text_info">
+                                <span>MO 화면</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="link_wrap">
+                          <a
+                            href="https://campaign.naver.com/event/npay-shinhanassociated_2109?placement=all"
+                            target="_blank"
+                            >2021년 09월 라인프렌즈 신한카드</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section_javascript"></div>
+          <div class="section_contact"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/jquery-3.6.1.min.js"></script>
+
+    <script>
+      // Initialize Swiper
+      var swiper = new Swiper(".project_list.two_content .swiper", {
+        slidesPerView: 1,
+        spaceBetween: 36,
+        slidesPerGroup: 1,
+
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            slidesPerGroup: 2,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".project_list.one_content .swiper", {
+        slidesPerView: 1,
+        spaceBetween: 36,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // 팝업 노출
+      // var test = document.querySelectorAll('.test');
+      // var dim = document.querySelector('.dim');
+
+      // test[0].addEventListener('click', function(e){
+      //     e.preventDefault();
+      //     dim.classList.add('active');
+      // });
+
+      // $(document).ready(function() {
+
+      //     $('.project01').load('include/project01_01.html');
+      // });
+
+      $(document).ready(function () {
+        $(".open_btn").click(function () {
+          $(this).parent().parent().toggleClass("on");
+
+          // for(var i = 0; i<toggle_box.length; i++){
+
+          //     $(toggle_box[i]).toggleClass('on');
+          // }
+        });
+
+        // 3초마다 on클래스 추가/제거
+
+        setTimeout(function () {
+          $(".text_box").toggleClass("on");
+        }, 1500);
+
+        $(function () {
+          var $menu = $(".gnb_list .item"), //메뉴 li값 가져오기
+            $contents = $(".content > div"), //컨텐츠의 div값 가져오기
+            $test = $(".content").offset().top; //offset()은 Document 를 기준으로 하는 좌표를 구할 때 쓰임
+
+          $menu.click(function (e) {
+            e.preventDefault(); // href 를 통해 이동하거나 , 창이 새로고침하여 실행되는 것 방지
+            var idx = $menu.index(this);
+            var section = $contents.eq(idx);
+            var sectionDistance = section.offset().top;
+
+            //A.scrollTop() 스크롤양 확인
+            $("html,body")
+              .stop()
+              .animate({ scrollTop: sectionDistance - 60 });
+          });
+
+          //window scroll 생기면
+          $(window).scroll(function () {
+            $contents.each(function () {
+              if ($(this).offset().top - 60 <= $(window).scrollTop()) {
+                var idx = $(this).index();
+                $menu.removeClass("on");
+                $menu.eq(idx).addClass("on");
+              } else if ($(this).offset().top <= $test) {
+                $menu.removeClass("on");
+              }
+            });
+          });
+
+          $(window).scroll(function () {
+            // const eventTopHeight1 = $('.spot').height();
+
+            window.addEventListener("scroll", function () {
+              var scrollpos = window.scrollY || window.pageYOffset;
+              $(".content").addClass("show");
+
+              if (scrollpos > 0) {
+                $(".content").addClass("show");
+              } else {
+                $(".content").removeClass("show");
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

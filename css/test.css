@@ -1,0 +1,19 @@
+.test {
+  background-image: url(../img/sprite.png);
+  background-size: 1351px 451px;
+  background-position: 0px -451px;
+  width: 256px;
+  height: 256px;
+  display: inline-block;
+  border: 1px solid blue;
+}
+
+.test2 {
+  background-image: url(../img/sprite.png);
+  background-size: 1351px 451px;
+  background-position: 0px 0px;
+  width: 684px;
+  height: 451px;
+  display: inline-block;
+  border: 1px solid red;
+}
