@@ -219,10 +219,16 @@ body {
 .header .menu_box .gnb_list .item + .item {
   margin-left: 4px;
 }
+.header .menu_box .gnb_list .item {
+  border-radius: 20px;
+  overflow: hidden;
+}
 .header .menu_box .gnb_list .item.on .link {
   background: #000;
   color: #fff;
-  border-radius: 20px;
+}
+.header .menu_box .gnb_list .item:hover .link {
+  background: #e8ebee;
 }
 .header .menu_box .gnb_list .link {
   display: block;
