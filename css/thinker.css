@@ -287,6 +287,8 @@ body {
   color: #000;
   text-align: center;
   mix-blend-mode: screen;
+  background: none;
+  color: #fff;
 }
 .content_spot .text_box .btn_go {
   display: block;
@@ -328,11 +330,35 @@ body {
   -webkit-background-clip: text;
   color: #fff;
   text-align: center;
-  animation: fadeUp 1.5s linear 1s forwards;
+}
+
+.details {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0;
+  animation: fadeUp 1.5s linear 1.7s forwards;
+  animation-play-state: paused;
 }
 
 .section_about {
   background: rgba(232, 235, 238, 0.2);
+}
+.section_about.on .title > span.left_t {
+  animation-play-state: running;
+}
+.section_about.on .title > span.right_t {
+  animation-play-state: running;
+}
+.section_about.on .sub_tit .text {
+  animation-play-state: running;
+}
+.section_about.on .info_box .info_tit {
+  animation-play-state: running;
+}
+.section_about.on .info_box .info_list {
+  animation-play-state: running;
 }
 .section_about .title {
   margin-bottom: 96px;
@@ -347,10 +373,12 @@ body {
 }
 .section_about .title > span.left_t {
   animation: fadeInLeft 2s linear forwards, fadeIn 3s ease-in forwards;
+  animation-play-state: paused;
 }
 .section_about .title > span.right_t {
   padding-left: 44px;
   animation: fadeInRight 2s linear forwards, fadeIn 3s ease-in forwards;
+  animation-play-state: paused;
 }
 .section_about .title .point {
   font-size: 50px;
@@ -364,7 +392,8 @@ body {
   text-align: left;
   opacity: 0;
   word-break: keep-all;
-  animation: fadeUp 1.5s linear 0.5s forwards;
+  animation: fadeUp 1.5s linear 1s forwards;
+  animation-play-state: paused;
 }
 .section_about .sub_tit .text:before {
   content: "";
@@ -409,13 +438,15 @@ body {
   background-image: linear-gradient(90deg, #2cd2d2 0, #2394fc);
   color: #fff;
   font-weight: 800;
-  animation: fadeUp 1.5s linear 1s forwards;
+  animation: fadeUp 1.5s linear 2s forwards;
+  animation-play-state: paused;
 }
 .section_about .info_box .info_list {
   position: relative;
   opacity: 0;
   font-size: 18px;
-  animation: fadeUp 1.5s linear 1.3s forwards;
+  animation: fadeUp 1.5s linear 2.3s forwards;
+  animation-play-state: paused;
 }
 .section_about .info_box .info_list dt {
   float: left;
@@ -434,9 +465,19 @@ body {
   color: #fff;
   text-align: center;
 }
+.section_tech.on .title {
+  animation-play-state: running;
+}
+.section_tech.on .details {
+  animation-play-state: running;
+}
+.section_tech.on .info_box:nth-child(n) {
+  animation-play-state: running;
+}
 .section_tech .title {
   opacity: 0;
-  animation: fadeUp 1.5s linear 1s forwards;
+  animation: fadeUp linear 1.3s forwards;
+  animation-play-state: paused;
 }
 .section_tech .info_box {
   position: relative;
@@ -445,14 +486,17 @@ body {
   border: 1px solid #fff;
   opacity: 0;
 }
-.section_tech .info_box:nth-child(2) {
-  animation: fadeUp 1.5s linear 1.5s forwards;
-}
 .section_tech .info_box:nth-child(3) {
-  animation: fadeUp 1.5s linear 1.9s forwards;
+  animation: fadeUp 1.5s linear 1.5s forwards;
+  animation-play-state: paused;
 }
 .section_tech .info_box:nth-child(4) {
+  animation: fadeUp 1.5s linear 1.9s forwards;
+  animation-play-state: paused;
+}
+.section_tech .info_box:nth-child(5) {
   animation: fadeUp 1.5s linear 2.2s forwards;
+  animation-play-state: paused;
 }
 .section_tech .info_box + .info_box {
   margin-top: 16px;
@@ -499,20 +543,65 @@ body {
   width: 100%;
   /* swiper */
 }
+.section_project.on .title {
+  animation-play-state: running;
+}
+.section_project.on .details {
+  animation-play-state: running;
+}
+.section_project.on .sub_title {
+  animation-play-state: running;
+}
+.section_project.on .explain_box {
+  animation-play-state: running;
+}
+.section_project.on .info_box {
+  animation-play-state: running;
+}
+.section_project.on .project_list .project_item:nth-child(n) {
+  animation-play-state: running;
+}
 .section_project .title {
   position: relative;
   opacity: 0;
-  animation: fadeUp 1.5s linear 1s forwards;
+  animation: fadeUp 1.5s linear 1.5s forwards;
+  animation-play-state: paused;
 }
 .section_project .sub_title {
   position: relative;
   opacity: 0;
-  animation: fadeUp 1.5s linear 1.2s forwards;
+  animation: fadeUp 1.5s linear 1.7s forwards;
+  animation-play-state: paused;
+}
+.section_project .explain_box {
+  position: relative;
+  opacity: 0;
+  animation: fadeUp 1.5s linear 1.9s forwards;
+  animation-play-state: paused;
+}
+.section_project .explain_box .list .item {
+  position: relative;
+  padding-left: 20px;
+}
+.section_project .explain_box .list .item + .item {
+  margin-top: 5px;
+}
+.section_project .explain_box .list .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon_check.png) no-repeat;
+  background-size: 16px 16px;
 }
 .section_project .info_box {
   position: relative;
   opacity: 0;
-  animation: fadeUp 1.5s linear 1.5s forwards;
+  animation: fadeUp 1.5s linear 1.9s forwards;
+  animation-play-state: paused;
 }
 .section_project .project_box {
   text-align: left;
@@ -533,6 +622,7 @@ body {
   box-sizing: border-box;
 }
 .section_project .project_list .project_item {
+  position: relative;
   width: 100%;
   margin-top: 20px;
   border-radius: 20px;
@@ -543,18 +633,23 @@ body {
 }
 .section_project .project_list .project_item:nth-child(1) {
   animation: fadeUp 1.5s linear 1.8s forwards;
+  animation-play-state: paused;
 }
 .section_project .project_list .project_item:nth-child(2) {
   animation: fadeUp 1.5s linear 2.1s forwards;
+  animation-play-state: paused;
 }
 .section_project .project_list .project_item:nth-child(3) {
   animation: fadeUp 1.5s linear 2.4s forwards;
+  animation-play-state: paused;
 }
 .section_project .project_list .project_item:nth-child(4) {
   animation: fadeUp 1.5s linear 2.7s forwards;
+  animation-play-state: paused;
 }
 .section_project .project_list .project_item:nth-child(5) {
   animation: fadeUp 1.5s linear 3s forwards;
+  animation-play-state: paused;
 }
 .section_project .project_list .project_item.only_btn_mo .swiper-button-next,
 .section_project .project_list .project_item.only_btn_mo .swiper-button-prev {
@@ -723,26 +818,40 @@ body {
   color: #fff;
   text-align: center;
 }
+.section_contact.on .title {
+  animation-play-state: running;
+}
+.section_contact.on .contact_list li {
+  animation-play-state: running;
+}
+.section_contact.on .contact_list li:nth-child(n) {
+  animation-play-state: running;
+}
 .section_contact .title {
   opacity: 0;
   animation: fadeUp 1.5s linear 1s forwards;
+  animation-play-state: paused;
 }
 .section_contact .contact_list {
   margin-top: 20px;
 }
 .section_contact .contact_list li {
+  position: relative;
   font-size: 25px;
   opacity: 0;
   animation: fadeUp 1.5s linear 1.3s forwards;
+  animation-play-state: paused;
 }
 .section_contact .contact_list li + li {
   margin-top: 30px;
 }
 .section_contact .contact_list li:first-child {
   animation: fadeUp 1.5s linear 1.3s forwards;
+  animation-play-state: paused;
 }
 .section_contact .contact_list li:nth-child(2) {
   animation: fadeUp 1.5s linear 1.6s forwards;
+  animation-play-state: paused;
 }
 .section_contact .contact_list li span {
   position: relative;
