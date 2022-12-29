@@ -667,6 +667,15 @@ body {
   font-size: 16px;
   line-height: 50px;
 }
+.section_project .project_list .toggle_box .subject .tag {
+  display: inline-block;
+  padding: 0 12px;
+  background: #67bb6c;
+  border-radius: 15px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #fff;
+}
 .section_project .project_list .toggle_box .open_btn {
   position: absolute;
   top: 0;
