@@ -1587,7 +1587,7 @@
               }
             });
             if (
-              $(window).scrollTop() + $(window).height() ==
+              Math.ceil($(window).scrollTop() + $(window).height()) ==
               $(document).height()
             ) {
               var lastIdx = $menu.length - 1;
